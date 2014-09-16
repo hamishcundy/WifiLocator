@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Floor"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/floors" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="X position"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" >
+
+            
+        </EditText>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Y position"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+    </TableRow>
+
+</TableLayout>

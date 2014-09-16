@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WiFiLocator</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string-array name="floors">
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string name="title_activity_localize">Localize Activity</string>
+
+</resources>

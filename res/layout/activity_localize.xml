@@ -1,0 +1,243 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nz.co.cundyhami.wifilocator.ui.LocalizeActivity"
+    >
+
+    <LinearLayout
+        android:id="@+id/done_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="Your location is:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="Floor"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:entries="@array/floors" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/retry_button"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp"
+            android:text="Retry" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/next_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/next_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="Turn 90° to your right, then press 'Done'"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/done_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Done"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scan_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/scantext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pre_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Wifi"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/wifi_settings"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Settings"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="GPS"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/gps_settings"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Settings"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="Floor"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:entries="@array/floors" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_action_location_found"
+            android:drawableRight="@drawable/ic_action_location_found"
+            android:text="Localize"
+            android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+    </LinearLayout>
+
+</FrameLayout>
+
